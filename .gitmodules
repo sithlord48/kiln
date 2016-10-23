@@ -1,0 +1,3 @@
+[submodule "atcore"]
+	path = atcore
+	url = git://anongit.kde.org/atcore.git
