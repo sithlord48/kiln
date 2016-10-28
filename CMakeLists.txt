@@ -5,6 +5,10 @@ cmake_minimum_required(VERSION 3.5)
 find_package(ECM REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${ECM_MODULE_PATH})
 
+set(CURSES_HAS_NCURSES TRUE)
+find_package(Curses REQUIRED)
+include_directories(${CURSES_INCLUDE_DIR})
+
 include(KDECompilerSettings)
 include(KDEInstallDirs)
 include(KDECMakeSettings)

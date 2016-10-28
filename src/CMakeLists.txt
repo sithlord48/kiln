@@ -9,4 +9,4 @@ set(KILN_SRCS
 add_executable(kiln ${KILN_SRCS})
 add_dependencies(kiln AtCoreLib)
 
-target_link_libraries(kiln AtCoreLib KF5::Solid)
+target_link_libraries(kiln AtCoreLib KF5::Solid ${CURSES_LIBARY})
